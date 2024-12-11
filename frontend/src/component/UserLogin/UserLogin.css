@@ -1,0 +1,172 @@
+/* General styles */
+.user-login-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.user-login-header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-login-logo {
+  width: 150px; /* Adjust logo size as needed */
+}
+
+.user-login-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.user-login-nav li {
+  margin-right: 20px;
+}
+
+.user-login-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.user-login-nav a:hover {
+  color: #007bff;
+}
+
+/* Content */
+.user-login-content {
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.user-login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.user-login-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.user-login-form p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.user-login-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.user-login-form input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.user-login-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 10px; /* Added margin to button */
+}
+
+.user-login-form button:hover {
+  background-color: #0056b3;
+}
+
+.user-login-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.user-login-form button[type="submit"] {
+  margin-top: 10px;
+}
+
+/* Footer */
+.user-login-footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #f2f2f2;
+}
+
+.user-login-footer p {
+  margin: 5px 0;
+}
+
+/* Link Styling for Toggle Button */
+.user-login-form button + button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: color 0.3s ease;
+}
+
+.user-login-form button + button:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .user-login-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .user-login-nav ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .user-login-nav li {
+    margin-bottom: 10px;
+  }
+
+  .user-login-logo {
+    width: 120px;
+  }
+
+  .user-login-content {
+    padding: 20px;
+  }
+
+  .user-login-form {
+    width: 100%;
+    padding: 30px;
+  }
+}
